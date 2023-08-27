@@ -61,6 +61,8 @@ django = ">=3.2.4"
 sqlparse = ">=0.2"
 
 [[package]]
+<<<<<<< HEAD
+=======
 name = "django-extensions"
 version = "3.2.3"
 description = "Extensions for Django"
@@ -75,6 +77,7 @@ files = [
 Django = ">=3.2"
 
 [[package]]
+>>>>>>> master
 name = "django-rest-framework"
 version = "0.1.0"
 description = "alias."
@@ -257,4 +260,8 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
+<<<<<<< HEAD
+content-hash = "6f85516dcb5e4498cd9c8ae73892a6ef2a4167db3b4c1f70f5f28092a3fe00e2"
+=======
 content-hash = "dfbea3b3a5f68cb93130a1733d6f39eb8d210eafb6c5eec872cbdc9287261e91"
+>>>>>>> master
