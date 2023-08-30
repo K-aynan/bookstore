@@ -32,30 +32,6 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ebac-bookstore-api.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-<<<<<<< HEAD
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django_extensions',
-    'rest_framework',
-    'order',
-    'product',
-    'debug_toolbar',
-]
-
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
-=======
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -80,7 +56,6 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
->>>>>>> master
 ]
 
 ROOT_URLCONF = "bookstore.urls"
@@ -159,7 +134,6 @@ STATIC_URL = "/static/"
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-<<<<<<< HEAD
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 INTERNAL_IPS = [
@@ -170,7 +144,7 @@ REST_FRAMWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framwork.pagination.PageNumberPagination',
     'PAGE_SIZE': 5
 }
-=======
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
@@ -190,11 +164,8 @@ INTERNAL_IPS = [
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
-<<<<<<< HEAD
 DEBUG = int(os.environ.get("DEBUG",default=0))
 
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(",")
-=======
+
 STATIC_ROOT = BASE_DIR / 'staticfiles'
->>>>>>> master
->>>>>>> a991d7180f29853b06070af236a2f21d4a98f53d
