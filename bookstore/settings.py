@@ -188,7 +188,13 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
+<<<<<<< HEAD
+DEBUG = int(os.environ.get("DEBUG",default=0))
+
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(",")
+=======
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 >>>>>>> master
+>>>>>>> a991d7180f29853b06070af236a2f21d4a98f53d
