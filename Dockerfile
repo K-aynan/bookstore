@@ -25,7 +25,7 @@ RUN apt-get update \
 
 RUN apt-get update \
     && apt-get -y install libpq-dev gcc \
-    && pip install psycopg2
+    && pip install psycopg2 \
     && pip install psycopg
 
 WORKDIR $PYSETUP_PATH
